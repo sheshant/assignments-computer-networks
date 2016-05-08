@@ -1,0 +1,31 @@
+
+reset
+set term postscript
+set output "average_throughput.ps"
+set xlabel "DataRate(Kbps)"
+set ylabel "Average Throughput"
+set autoscale
+plot "average throughput_e.txt" with linespoints, "average throughput_e.txt" with yerrorlines lt rgb "violet", "average throughput_l.txt" with linespoints, "average throughput_l.txt" with yerrorlines lt rgb "red" ;
+
+reset
+set term postscript
+set output "forwarding_delay.ps"
+set xlabel "DataRate(Kbps)"
+set ylabel "Forwarding Delay"
+set autoscale
+plot "forwarding delay_e.txt" with linespoints, "forwarding delay_e.txt" with yerrorlines lt rgb "violet", "forwarding delay_l.txt" with linespoints, "forwarding delay_l.txt" with yerrorlines lt rgb "red";
+
+reset
+set term postscript
+set output "jitter.ps"
+set xlabel "DataRate(Kbps)"
+set ylabel "Jitter"
+set autoscale
+plot "jitter_e.txt" with linespoints, "jitter_e.txt" with yerrorlines lt rgb "violet" , "jitter_l.txt" with linespoints, "jitter_l.txt" with yerrorlines lt rgb "red" ;
+
+
+
+
+
+
+

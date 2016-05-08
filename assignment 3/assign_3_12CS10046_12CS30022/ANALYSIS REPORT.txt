@@ -1,0 +1,22 @@
+						ANALYSIS REPORT
+
+
+1)We have used the random seed generator to get the different set of traces which will give the different set of data
+
+2)we have kept the packet size fixed
+
+3)We have taken 10 different set of data for each distinct Data Rate and then we take the average throughput and the forward delay and jitter
+
+4)average throughput is calculated by taking the total number of bytes transfered didvided by total time taken by the device
+
+5)forward delay is calculated by taking the enqueue and dequeue delay and also enqueue and received delay per packet
+
+6)jitter is calculated as standard deviation of average delay 
+
+7)We noticed that the forward delay is increased for increase in Data Rate this shows that there is increase in delay and also more risk of loss of data 
+
+8)we have also seen that the jitter value is also increased in case when data rate is increased
+
+9)we have seen that the average throughput is increased for increase in Data Rate as well as the standard deviation of this average throughput is also increased for increase in Data Rate for obvious reason 
+
+10)But we noticed that there is no such increase in case of standard deviation of jitter and forward delay
